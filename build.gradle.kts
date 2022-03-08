@@ -1,18 +1,26 @@
 plugins {
-    kotlin("jvm") version "1.5.21"
+  kotlin("jvm") version "1.6.10"
+  id("io.kotest.multiplatform") version "5.1.0"
 }
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    implementation(kotlin("stdlib"))
-    implementation("io.arrow-kt:arrow-core:0.13.2")
-    implementation("io.arrow-kt:arrow-optics:0.13.2")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1")
-    implementation("io.arrow-kt:arrow-fx-coroutines:0.13.2")
+  implementation(kotlin("stdlib"))
+  implementation("io.arrow-kt:arrow-core:1.0.1")
+  implementation("io.arrow-kt:arrow-optics:1.0.1")
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1")
+  implementation("io.arrow-kt:arrow-fx-coroutines:1.0.1")
+
+  testImplementation("io.kotest:kotest-property:5.1.0")
+  testImplementation("io.kotest:kotest-assertions-core:5.1.0")
+  testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.2.3")
+  testImplementation("io.kotest.extensions:kotest-property-arrow:1.2.3") // optional
+  testImplementation("io.kotest.extensions:kotest-property-arrow-optics:1.2.3") // optional
+  testImplementation("io.kotest:kotest-runner-junit5-jvm:5.1.0")
 }
