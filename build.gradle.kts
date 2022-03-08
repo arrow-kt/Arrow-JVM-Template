@@ -20,7 +20,6 @@ dependencies {
   ksp("io.arrow-kt:arrow-optics-ksp-plugin:1.0.3-alpha.20")
 
   testImplementation("io.kotest:kotest-property:5.1.0")
-  testImplementation("io.kotest:kotest-framework-engine:5.1.0")
   testImplementation("io.kotest:kotest-assertions-core:5.1.0")
   testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.2.3")
   testImplementation("io.kotest.extensions:kotest-property-arrow:1.2.3") // optional
