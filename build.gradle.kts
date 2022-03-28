@@ -17,10 +17,10 @@ dependencies {
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
   implementation("io.arrow-kt:arrow-fx-coroutines:1.0.1")
 
-  testImplementation("io.kotest:kotest-property:5.2.1")
-  testImplementation("io.kotest:kotest-assertions-core:5.2.1")
-  testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.2.3")
-  testImplementation("io.kotest.extensions:kotest-property-arrow:1.2.3") // optional
-  testImplementation("io.kotest.extensions:kotest-property-arrow-optics:1.2.3") // optional
-  testImplementation("io.kotest:kotest-runner-junit5-jvm:5.2.1")
+  testImplementation("io.kotest:kotest-property:5.2.2")
+  testImplementation("io.kotest:kotest-assertions-core:5.2.2")
+  testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.2.4")
+  testImplementation("io.kotest.extensions:kotest-property-arrow:1.2.4") // optional
+  testImplementation("io.kotest.extensions:kotest-property-arrow-optics:1.2.4") // optional
+  testImplementation("io.kotest:kotest-runner-junit5-jvm:5.2.2")
 }
