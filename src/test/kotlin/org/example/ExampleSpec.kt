@@ -35,23 +35,23 @@ class ExampleSpec : StringSpec({
   "kotest arrow extension use-cases" {
     // smart-cast abilities for arrow types
     Either.Right("HI").shouldBeRight().shouldBeTypeOf<String>()
-
-    // utilise builtin or costume Laws with Generators to verify behavior
-    testLaws(
-      MonoidLaws.laws(Monoid.list(), Arb.list(Arb.string())),
-      MonoidLaws.laws(Monoid.numbers(), Arb.numbers())
-    )
-
-    // optics Laws from arrow
-    testLaws(
-      TraversalLaws.laws(
-        traversal = Traversal.either(),
-        aGen = Arb.either(Arb.string(), Arb.int()),
-        bGen = Arb.int(),
-        funcGen = Arb.functionAToB(Arb.int()),
-      )
-    )
   }
+
+  // utilise builtin or costume Laws with Generators to verify behavior
+  testLaws(
+    MonoidLaws.laws(Monoid.list(), Arb.list(Arb.string())),
+    MonoidLaws.laws(Monoid.numbers(), Arb.numbers())
+  )
+
+  // optics Laws from arrow
+  testLaws(
+    TraversalLaws.laws(
+      traversal = Traversal.either(),
+      aGen = Arb.either(Arb.string(), Arb.int()),
+      bGen = Arb.int(),
+      funcGen = Arb.functionAToB(Arb.int()),
+    )
+  )
 
   "optics test with Lens which has imported element" {
     val i: Lens<OpticsTest, Duration> = OpticsTest.time
