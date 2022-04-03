@@ -1,7 +1,7 @@
 plugins {
-  kotlin("jvm") version "1.6.10"
+  kotlin("jvm") version "1.6.20"
   id("io.kotest.multiplatform") version "5.2.1"
-  id("com.google.devtools.ksp") version "1.6.10-1.0.4"
+  id("com.google.devtools.ksp") version "1.6.20-1.0.4"
 }
 
 group = "org.example"
@@ -17,7 +17,7 @@ dependencies {
   implementation("io.arrow-kt:arrow-optics:1.0.1")
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
   implementation("io.arrow-kt:arrow-fx-coroutines:1.0.1")
-  ksp("io.arrow-kt:arrow-optics-ksp-plugin:1.0.3-alpha.34")
+  ksp("io.arrow-kt:arrow-optics-ksp-plugin:1.0.3-alpha.35")
 
   testImplementation("io.kotest:kotest-property:5.2.2")
   testImplementation("io.kotest:kotest-assertions-core:5.2.2")
