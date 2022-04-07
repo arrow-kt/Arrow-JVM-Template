@@ -1,6 +1,6 @@
 plugins {
   kotlin("jvm") version "1.6.20"
-  id("io.kotest.multiplatform") version "5.2.1"
+  id("io.kotest.multiplatform") version "5.2.3"
 }
 
 group = "org.example"
