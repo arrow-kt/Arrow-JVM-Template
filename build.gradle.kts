@@ -17,7 +17,7 @@ dependencies {
   implementation("io.arrow-kt:arrow-optics:1.0.1")
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
   implementation("io.arrow-kt:arrow-fx-coroutines:1.0.1")
-  ksp("io.arrow-kt:arrow-optics-ksp-plugin:1.0.3-alpha.38")
+  ksp("io.arrow-kt:arrow-optics-ksp-plugin:1.0.3-alpha.39")
 
   testImplementation("io.kotest:kotest-property:5.2.3")
   testImplementation("io.kotest:kotest-assertions-core:5.2.3")
