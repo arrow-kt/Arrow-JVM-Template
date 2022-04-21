@@ -1,7 +1,7 @@
 plugins {
   kotlin("jvm") version "1.6.21"
   id("io.kotest.multiplatform") version "5.2.3"
-  id("com.google.devtools.ksp") version "1.6.20-1.0.5"
+  id("com.google.devtools.ksp") version "1.6.21-1.0.5"
 }
 
 group = "org.example"
