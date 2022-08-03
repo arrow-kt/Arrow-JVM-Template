@@ -1,6 +1,6 @@
 plugins {
-  kotlin("jvm") version "1.6.21"
-  id("io.kotest.multiplatform") version "5.3.0"
+  kotlin("jvm") version "1.7.10"
+  id("io.kotest.multiplatform") version "5.4.1"
 }
 
 group = "org.example"
@@ -14,13 +14,13 @@ dependencies {
   implementation(kotlin("stdlib"))
   implementation("io.arrow-kt:arrow-core:1.1.2")
   implementation("io.arrow-kt:arrow-optics:1.1.2")
-  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.2")
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
   implementation("io.arrow-kt:arrow-fx-coroutines:1.1.2")
 
-  testImplementation("io.kotest:kotest-property:5.3.0")
-  testImplementation("io.kotest:kotest-assertions-core:5.3.0")
+  testImplementation("io.kotest:kotest-property:5.4.1")
+  testImplementation("io.kotest:kotest-assertions-core:5.4.1")
   testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.2.5")
   testImplementation("io.kotest.extensions:kotest-property-arrow:1.2.5") // optional
   testImplementation("io.kotest.extensions:kotest-property-arrow-optics:1.2.5") // optional
-  testImplementation("io.kotest:kotest-runner-junit5-jvm:5.3.0")
+  testImplementation("io.kotest:kotest-runner-junit5-jvm:5.4.1")
 }
