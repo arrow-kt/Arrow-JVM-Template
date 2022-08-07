@@ -12,10 +12,10 @@ repositories {
 
 dependencies {
   implementation(kotlin("stdlib"))
-  implementation("io.arrow-kt:arrow-core:1.1.3-alpha.39")
-  implementation("io.arrow-kt:arrow-optics:1.1.3-alpha.39")
+  implementation("io.arrow-kt:arrow-core:1.1.3-alpha.43")
+  implementation("io.arrow-kt:arrow-optics:1.1.3-alpha.43")
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-  implementation("io.arrow-kt:arrow-fx-coroutines:1.1.3-alpha.39")
+  implementation("io.arrow-kt:arrow-fx-coroutines:1.1.3-alpha.43")
 
   testImplementation("io.kotest:kotest-property:5.4.1")
   testImplementation("io.kotest:kotest-assertions-core:5.4.1")
