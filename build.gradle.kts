@@ -10,6 +10,10 @@ repositories {
   mavenCentral()
 }
 
+tasks.withType<Test> {
+  useJUnitPlatform()
+}
+
 dependencies {
   implementation(kotlin("stdlib"))
   implementation("io.arrow-kt:arrow-core:1.1.3")
