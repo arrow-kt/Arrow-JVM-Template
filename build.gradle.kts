@@ -45,7 +45,3 @@ kotlin {
     kotlin.srcDir("build/generated/ksp/test/kotlin")
   }
 }
-
-tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-  kotlinOptions.freeCompilerArgs += "-Xcontext-receivers"
-}
