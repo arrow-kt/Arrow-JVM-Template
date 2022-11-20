@@ -28,9 +28,9 @@ dependencies {
 
   testImplementation("io.kotest:kotest-property:5.5.4")
   testImplementation("io.kotest:kotest-assertions-core:5.5.4")
-  testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.2.0.157-SNAPSHOT")
-  testImplementation("io.kotest.extensions:kotest-property-arrow:1.2.0.157-SNAPSHOT") // optional
-  testImplementation("io.kotest.extensions:kotest-property-arrow-optics:1.2.0.157-SNAPSHOT") // optional
+  testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.2.5")
+  testImplementation("io.kotest.extensions:kotest-property-arrow:1.2.5") // optional
+  testImplementation("io.kotest.extensions:kotest-property-arrow-optics:1.2.5") // optional
   testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.4")
 }
 
