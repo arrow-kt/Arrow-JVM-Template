@@ -1,7 +1,7 @@
 plugins {
-  kotlin("jvm") version "1.6.21"
+  kotlin("jvm") version "1.7.21"
   id("io.kotest.multiplatform") version "5.5.4"
-  id("com.google.devtools.ksp") version "1.6.21-1.0.6"
+  id("com.google.devtools.ksp") version "1.7.21-1.0.8"
 }
 
 group = "org.example"
@@ -12,6 +12,7 @@ repositories {
   maven {
     url = uri("https://oss.sonatype.org/content/repositories/snapshots")
   }
+  // for kotest snapshots
   maven {
     url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
   }
