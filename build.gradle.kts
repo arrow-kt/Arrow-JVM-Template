@@ -1,7 +1,7 @@
 plugins {
-  kotlin("jvm") version "1.7.21"
+  kotlin("jvm") version "1.7.22"
   id("io.kotest.multiplatform") version "5.5.4"
-  id("com.google.devtools.ksp") version "1.7.21-1.0.8"
+  id("com.google.devtools.ksp") version "1.7.22-1.0.8"
 }
 
 group = "org.example"
@@ -28,9 +28,9 @@ dependencies {
 
   testImplementation("io.kotest:kotest-property:5.5.4")
   testImplementation("io.kotest:kotest-assertions-core:5.5.4")
-  testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.2.5")
-  testImplementation("io.kotest.extensions:kotest-property-arrow:1.2.5") // optional
-  testImplementation("io.kotest.extensions:kotest-property-arrow-optics:1.2.5") // optional
+  testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.3.0")
+  testImplementation("io.kotest.extensions:kotest-property-arrow:1.3.0") // optional
+  testImplementation("io.kotest.extensions:kotest-property-arrow-optics:1.3.0") // optional
   testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.4")
 }
 
