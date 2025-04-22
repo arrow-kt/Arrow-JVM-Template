@@ -3,7 +3,7 @@
     "config:base"
   ],
   "commitBodyTable": true,
-  "baseBranches": ["main", "optics-setup"],
+  "baseBranches": ["main"],
   "packageRules": [
     {
       "matchPackagePatterns": [

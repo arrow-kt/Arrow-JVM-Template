@@ -1,6 +1,6 @@
 plugins {
-  kotlin("jvm") version "1.9.22"
-  id("io.kotest.multiplatform") version "5.8.0"
+  alias(libs.plugins.kotlin.jvm)
+  alias(libs.plugins.ksp)
 }
 
 group = "org.example"
@@ -16,15 +16,14 @@ tasks.withType<Test> {
 
 dependencies {
   implementation(kotlin("stdlib"))
-  implementation("io.arrow-kt:arrow-core:1.2.1")
-  implementation("io.arrow-kt:arrow-optics:1.2.1")
-  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-  implementation("io.arrow-kt:arrow-fx-coroutines:1.2.1")
+  implementation(libs.coroutines.core)
+  implementation(libs.arrow.core)
+  implementation(libs.arrow.fxCoroutines)
+  implementation(libs.arrow.resilience)
+  implementation(libs.arrow.optics)
 
-  testImplementation("io.kotest:kotest-property:5.8.0")
-  testImplementation("io.kotest:kotest-assertions-core:5.8.0")
-  testImplementation("io.kotest.extensions:kotest-assertions-arrow:1.4.0")
-  testImplementation("io.kotest.extensions:kotest-property-arrow:1.4.0") // optional
-  testImplementation("io.kotest.extensions:kotest-property-arrow-optics:1.4.0") // optional
-  testImplementation("io.kotest:kotest-runner-junit5-jvm:5.8.0")
+  ksp(libs.arrow.optics.ksp)
+
+  testImplementation(kotlin("test"))
+  testImplementation(libs.bundles.testing)
 }
