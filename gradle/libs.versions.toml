@@ -1,9 +1,9 @@
 [versions]
-arrow = "2.1.0"
+arrow = "2.1.1"
 coroutines = "1.10.2"
 kotlin = "2.1.20"
-kotest = "6.0.0.M3"
-ksp = "2.1.20-2.0.0"
+kotest = "6.0.0.M4"
+ksp = "2.1.20-2.0.1"
 
 [libraries]
 arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
