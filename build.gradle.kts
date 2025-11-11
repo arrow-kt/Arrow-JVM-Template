@@ -1,6 +1,8 @@
+import arrow.optics.plugin.arrowOptics
+
 plugins {
   alias(libs.plugins.kotlin.jvm)
-  alias(libs.plugins.ksp)
+  alias(libs.plugins.arrow.optics)
 }
 
 group = "org.example"
@@ -22,8 +24,10 @@ dependencies {
   implementation(libs.arrow.resilience)
   implementation(libs.arrow.optics)
 
-  ksp(libs.arrow.optics.ksp)
-
   testImplementation(kotlin("test"))
   testImplementation(libs.bundles.testing)
+}
+
+kotlin {
+  arrowOptics()
 }
